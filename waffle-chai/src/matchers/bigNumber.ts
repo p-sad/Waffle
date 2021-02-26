@@ -61,8 +61,7 @@ function overwriteBigNumberFunction(
 }
 
 function overrideWithin(utils: Chai.ChaiUtils) {
-  return (_super: (...args: any[]) => any) =>
-    overwriteBigNumberWithin(_super, utils);
+  return (_super: (...args: any[]) => any) => overwriteBigNumberWithin(_super, utils);
 }
 
 function overwriteBigNumberWithin(_super: (...args: any[]) => any, chaiUtils: Chai.ChaiUtils) {
